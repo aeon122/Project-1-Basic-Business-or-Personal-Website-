@@ -6,27 +6,34 @@ body {
     line-height: 1.6;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.text-shadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /*  === HERO / BANNER ==== */
 .hero {
-    background-color: #f8f9fa;
-    padding: 4rem 0;
-    text-align: center;
+    background-image: linear-gradient(#00000060, #00000060), url('/images/pizza-hero.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.lead-head {
+    font-size: 2rem;
+}
+
+/*  === NAVBAR === */
+.navbar>.container {
+    justify-content: flex-start
 }
 
 /*  === MENU SECTION === */
-.pizza-card img {
-    height: 200px;
-    object-fit: cover;
-}
 
-.pizza-card .card-body {
-    text-align: left;
-}
+
 
 /*  ==== CUSTOMIZATION FORM ====  */
 form label {

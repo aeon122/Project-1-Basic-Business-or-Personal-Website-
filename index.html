@@ -12,33 +12,47 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top shadow">
         <div class="container">
-            <a class="navbar-brand" href="#">Pizza Palace</a>
+            <a class="navbar-brand pe-5" href="#top">Pizza Palace</a>
+            <a class="navbar-brand ps-5" href="#our-menu">Our Menu</a>
+            <a class="navbar-brand ps-3" href="#customization-your-pizza">Customize Your Pizza</a>
+            <a class="navbar-brand ps-3" href="#visit-us">Visit Us</a>
         </div>
     </nav>
 
     <!-- Hero Banner -->
-    <section class="bg-light text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Welcome to Pizza Palace</h1>
-            <p class="lead">Fresh, hot, and made just for you!</p>
+    <section class="bg-dark hero text-center py-5">
+        <div class="container py-4">
+            <h1 class="text-white text-shadow"><b>Welcome to Pizza Palace</b></h1>
+            <p class="lead-head text-white">Fresh, hot, and made just for you!</p>
         </div>
     </section>
 
     <!-- Browse Menu -->
-    <section class="py-5 bg-white">
+    <section id="our-menu" class="py-5 bg-white">
         <div class="container">
             <h2 class="mb-4">Our Menu</h2>
             <div class="row g-4">
                 <!-- Pizza Item -->
                 <div class="col-md-4">
-                    <div class="card pizza-card">
-                        <img src="https://via.placeholder.com/400x200?text=Pepperoni+Pizza" class="card-img-top"
+                    <div class="card pizza-card h-100 shadow">
+                        <img src="/images/pepperoni-pizza.jpg" class="w-100 img-fluid"
                             alt="Pepperoni Pizza">
                         <div class="card-body">
                             <h5 class="card-title">Pepperoni Pizza</h5>
-                            <p class="card-text">Classic pizza topped with mozzarella cheese and spicy pepperoni.</p>
+                            <p class="card-text">Classic pizza topped with mozzarella cheese and spicy pepperoni with our homemade pizza crust.</p>
+                            <span class="badge bg-success">Special Offer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card pizza-card h-100 shadow">
+                        <img src="/images/hawaiian-pizza.jpg" class="w-100 img-fluid"
+                            alt="Pepperoni Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Hawaiian Pizza</h5>
+                            <p class="card-text">Classic Hawaiian Pizza combines pizza sauce, cheese, cooked ham, and pineapple. This crowd-pleasing pizza recipe starts with our homemade pizza crust.</p>
                             <span class="badge bg-success">Special Offer</span>
                         </div>
                     </div>
@@ -49,7 +63,7 @@
     </section>
 
     <!-- Customization Options -->
-    <section class="py-5 bg-light">
+    <section id="customization-your-pizza" class="py-5 bg-light">
         <div class="container">
             <h2 class="mb-4">Customize Your Pizza</h2>
             <form>
@@ -95,7 +109,7 @@
     </section>
 
     <!-- Basic Location & Hours -->
-    <section class="py-5 bg-white">
+    <section id="visit-us" class="py-5 bg-white">
         <div class="container">
             <h2 class="mb-4">Visit Us</h2>
             <div class="row">
@@ -123,6 +137,8 @@
         <p class="mb-0">&copy; 2025 Pizza Palace. All rights reserved.</p>
     </footer>
 
+    <script src="https://kit.fontawesome.com/1a12f61d30.js" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
