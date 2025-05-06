@@ -5,19 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pizza Palace</title>
+    <link rel="icon" type="image/x-icon" href="/images/pizza-place-logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top shadow">
         <div class="container">
-            <a class="navbar-brand pe-5" href="#top">Pizza Palace</a>
-            <a class="navbar-brand ps-5" href="#our-menu">Our Menu</a>
-            <a class="navbar-brand ps-3" href="#customization-your-pizza">Customize Your Pizza</a>
-            <a class="navbar-brand ps-3" href="#visit-us">Visit Us</a>
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#top">
+                <img src="/images/pizza-place-logo.png" style="max-width: 100px;" alt="Pizza Palace Logo">
+            </a>
+
+            <!-- Toggler (hamburger menu) -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible nav items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3" href="#our-menu">Our Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3" href="#customization-your-pizza">Customize Your Pizza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3" href="#visit-us">Visit Us</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </nav>
 
@@ -32,42 +55,52 @@
     <!-- Browse Menu -->
     <section id="our-menu" class="py-5 bg-white">
         <div class="container">
-            <h2 class="mb-4">Our Menu</h2>
+            <h2 class="text-md-center mb-5"><b>Our Menu</b></h2>
             <div class="row g-4">
                 <!-- Pizza Item -->
                 <div class="col-md-4">
-                    <div class="card pizza-card h-100 shadow">
-                        <img src="/images/pepperoni-pizza.jpg" class="w-100 img-fluid"
-                            alt="Pepperoni Pizza">
+                    <div class="card pizza-card card-hover h-100 shadow">
+                        <img src="/images/pepperoni-pizza.jpg" class="w-100 img-fluid" alt="Pepperoni Pizza">
                         <div class="card-body">
                             <h5 class="card-title">Pepperoni Pizza</h5>
-                            <p class="card-text">Classic pizza topped with mozzarella cheese and spicy pepperoni with our homemade pizza crust.</p>
+                            <p class="card-text">Classic pizza topped with mozzarella cheese and spicy pepperoni with
+                                our homemade pizza crust.</p>
                             <span class="badge bg-success">Special Offer</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card pizza-card h-100 shadow">
-                        <img src="/images/hawaiian-pizza.jpg" class="w-100 img-fluid"
-                            alt="Pepperoni Pizza">
+                    <div class="card pizza-card card-hover h-100 shadow">
+                        <img src="/images/hawaiian-pizza.jpg" class="w-100 img-fluid" alt="Pepperoni Pizza">
                         <div class="card-body">
                             <h5 class="card-title">Hawaiian Pizza</h5>
-                            <p class="card-text">Classic Hawaiian Pizza combines pizza sauce, cheese, cooked ham, and pineapple. This crowd-pleasing pizza recipe starts with our homemade pizza crust.</p>
+                            <p class="card-text">Classic Hawaiian Pizza combines pizza sauce, cheese, cooked ham, and
+                                pineapple. This crowd-pleasing pizza recipe starts with our homemade pizza crust.</p>
                             <span class="badge bg-success">Special Offer</span>
                         </div>
                     </div>
                 </div>
-                <!-- Going to add more pizza items -->
+                <div class="col-md-4">
+                    <div class="card pizza-card card-hover h-100 shadow">
+                        <img src="/images/vegetarian-pizza.jpg" class="w-100 img-fluid" alt="Pepperoni Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Vegetarian Pizza</h5>
+                            <p class="card-text">This vegetarian pizza recipe is a lifesaver in those situations. Piled
+                                with caramelized onions, mushrooms, fresh basil, jalapeno and 2 types of honey.</p>
+                            <span class="badge bg-success">Special Offer</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Customization Options -->
-    <section id="customization-your-pizza" class="py-5 bg-light">
+    <section id="customization-your-pizza" class="py-5 bg-dark text-white customization-bg">
         <div class="container">
-            <h2 class="mb-4">Customize Your Pizza</h2>
+            <h2 class="text-md-center mb-5"><b>Customize Your Pizza </b></h2>
             <form>
-                <div class="mb-3">
+                <div class="mb-3 form-sz">
                     <label class="form-label">Choose Size:</label><br>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="size" id="small" value="small">
@@ -81,24 +114,75 @@
                         <input class="form-check-input" type="radio" name="size" id="large" value="large">
                         <label class="form-check-label" for="large">Large</label>
                     </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="size" id="xl-large" value="large">
+                        <label class="form-check-label" for="large">XL-large</label>
+                    </div>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Toppings:</label><br>
-                    <div class="form-check form-check-inline">
+                    <p class="p-section-bg w-75 p-2">Choose Cheese</p>
+                    <div class="form-check form-check-inline pb-3">
                         <input class="form-check-input" type="checkbox" id="extra-cheese">
                         <label class="form-check-label" for="extra-cheese">Extra Cheese</label>
                     </div>
                     <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="feta-cheese">
+                        <label class="form-check-label" for="Feta-cheese">Feta Cheese</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="extra-cheese">
+                        <label class="form-check-label" for="extra-cheese">Cheddar Cheese Blend</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="feta-cheese">
+                        <label class="form-check-label" for="Feta-cheese">Shredded Provolone Cheese</label>
+                    </div>
+                    <p class="p-section-bg w-75 p-2">Choose Meats</p>
+                    <div class="form-check form-check-inline pb-3">
+                        <input class="form-check-input" type="checkbox" id="ham">
+                        <label class="form-check-label" for="ham">Ham</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="beef">
+                        <label class="form-check-label" for="beef">Beef</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="bacon">
+                        <label class="form-check-label" for="bacon">Bacon</label>
+                    </div>
+                    <p class="p-section-bg w-75 p-2 pt-3">Choose Non-meats</p>
+                    <div class="form-check form-check-inline pb-3">
                         <input class="form-check-input" type="checkbox" id="mushrooms">
                         <label class="form-check-label" for="mushrooms">Mushrooms</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="green-peppers">
+                        <label class="form-check-label" for="green-peppers">Green Peppers</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="spinach">
+                        <label class="form-check-label" for="spinach">Spinach</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="onions">
+                        <label class="form-check-label" for="onions">Onions</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="diced-tomatoes">
+                        <label class="form-check-label" for="diced-tomatoes">Diced Tomatoes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="p">
+                        <label class="form-check-label" for="pineapple">Pineapple</label>
                     </div>
                     <!-- Going to add more topping items -->
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Crust Type:</label>
-                    <select class="form-select">
+                    <select class="form-select w-75">
                         <option>Thin Crust</option>
                         <option>Thick Crust</option>
                         <option>Cheese Stuffed</option>
@@ -109,24 +193,28 @@
     </section>
 
     <!-- Basic Location & Hours -->
-    <section id="visit-us" class="py-5 bg-white">
+    <section id="visit-us" class="py-4 bg-dark text-white">
         <div class="container">
-            <h2 class="mb-4">Visit Us</h2>
+            <h2 class="text-md-center mb-5">Visit Us</h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-3">
+                    <img src="/images/restaurant.jpg" class="w-75 shadow img-fluid" alt="Pizza Place restaurant">
+                </div>
+                <div class="col-md-3">
                     <h5>Our Location</h5>
                     <p>123 Pizza Street<br>Cheesetown, NY 10001</p>
                     <p><strong>Phone:</strong> (555) 123-4567</p>
                     <p><strong>Email:</strong> contact@pizzapalace.com</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <h5>Operating Hours</h5>
                     <ul class="list-unstyled">
-                        <li>Mon–Fri: 11am – 10pm</li>
-                        <li>Sat–Sun: 12pm – 11pm</li>
+                        <li>Monday – Friday: 11am – 10pm</li>
+                        <li>Saturday – Sunday: 12pm – 11pm</li>
                     </ul>
-                    <img src="https://via.placeholder.com/400x200?text=Map+Placeholder" class="img-fluid mt-3"
-                        alt="Map">
+                </div>
+                <div class="col-md-3">
+                    <img src="/images/map.jpg" class="w-75 img-fluid shadow mt-3" alt="Map">
                 </div>
             </div>
         </div>
@@ -137,8 +225,9 @@
         <p class="mb-0">&copy; 2025 Pizza Palace. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/1a12f61d30.js" crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>

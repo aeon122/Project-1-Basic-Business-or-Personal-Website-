@@ -10,6 +10,10 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+a:hover {
+    color: black !important;
+}
+
 /*  === HERO / BANNER ==== */
 .hero {
     background-image: linear-gradient(#00000060, #00000060), url('/images/pizza-hero.jpg');
@@ -20,6 +24,11 @@ body {
 h1 {
     font-weight: 500;
     font-size: 4rem;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    letter-spacing: 1.5px;
 }
 
 .lead-head {
@@ -31,9 +40,28 @@ h1 {
     justify-content: flex-start
 }
 
+.nav-link {
+    font-size: 1.2rem;
+}
+
 /*  === MENU SECTION === */
 
+/* Hover Lift Effect for Cards */
+.customization-bg {
+    background-image: linear-gradient(#00000060, #00000060), url('/images/customization-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.form-sz {
+    font-size: larger;
+}
 
 /*  ==== CUSTOMIZATION FORM ====  */
 form label {
@@ -42,6 +70,10 @@ form label {
 
 form .form-check-label {
     margin-right: 1rem;
+}
+
+.p-section-bg {
+    background-color: #000000da;
 }
 
 /*  === LOCATION & CONTACT ===  */
