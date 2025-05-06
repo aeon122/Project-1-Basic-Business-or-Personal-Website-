@@ -89,3 +89,10 @@ form .form-check-label {
 footer {
     font-size: 0.9rem;
 }
+
+/*  === MEDIA QUERIES === */
+@media (maz-width: 768px) {
+    .w-100-mobile {
+        width: 100% !important;
+    }
+}
