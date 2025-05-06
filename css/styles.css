@@ -1,4 +1,4 @@
-/*  ==== BASE STYLES ====    */
+/*  ==== BASE STYLES ==== */
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #fff;
@@ -14,13 +14,7 @@ a:hover {
     color: black !important;
 }
 
-/*  === HERO / BANNER ==== */
-.hero {
-    background-image: linear-gradient(#00000060, #00000060), url('/images/pizza-hero.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
+/*  ==== TYPOGRAPHY  ==== */
 h1 {
     font-weight: 500;
     font-size: 4rem;
@@ -37,16 +31,27 @@ h2 {
 
 /*  === NAVBAR === */
 .navbar>.container {
-    justify-content: flex-start
+    justify-content: flex-start;
 }
 
 .nav-link {
     font-size: 1.2rem;
 }
 
-/*  === MENU SECTION === */
+/*  === HERO / BANNER ==== */
+.hero {
+    background-image: linear-gradient(#00000060, #00000060), url('/images/pizza-hero.jpg');
+    background-position: center;
+    background-size: cover;
+}
 
-/* Hover Lift Effect for Cards */
+/*  === MENU SECTION === */
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/*  === CUSTOMIZATION SECTION  ==== */
 .customization-bg {
     background-image: linear-gradient(#00000060, #00000060), url('/images/customization-bg.jpg');
     background-position: center;
@@ -54,16 +59,32 @@ h2 {
     background-attachment: fixed;
 }
 
-.card-hover:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
+form label {
+    font-weight: 500;
+}
+
+form .form-check-label {
+    margin-right: 1rem;
 }
 
 .form-sz {
     font-size: larger;
 }
 
-/*  ==== CUSTOMIZATION FORM ====  */
+.p-section-bg {
+    background-color: #000000da;
+}
+
+/*  === LOCATION & CONTACT INFO === */
+.contact-info {
+    padding: 2rem 0;
+}
+
+.contact-info h5 {
+    font-weight: bold;
+}
+
+/*  ==== CUSTOMIZATION FORM ==== */
 form label {
     font-weight: 500;
 }
@@ -76,7 +97,7 @@ form .form-check-label {
     background-color: #000000da;
 }
 
-/*  === LOCATION & CONTACT ===  */
+/*  === LOCATION & CONTACT INFO  === */
 .contact-info {
     padding: 2rem 0;
 }
