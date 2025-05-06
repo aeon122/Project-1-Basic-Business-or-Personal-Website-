@@ -1,0 +1,52 @@
+/*  ==== BASE STYLES ====    */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*  === HERO / BANNER ==== */
+.hero {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/*  === MENU SECTION === */
+.pizza-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.pizza-card .card-body {
+    text-align: left;
+}
+
+/*  ==== CUSTOMIZATION FORM ====  */
+form label {
+    font-weight: 500;
+}
+
+form .form-check-label {
+    margin-right: 1rem;
+}
+
+/*  === LOCATION & CONTACT ===  */
+.contact-info {
+    padding: 2rem 0;
+}
+
+.contact-info h5 {
+    font-weight: bold;
+}
+
+/*  === FOOTER ====  */
+footer {
+    font-size: 0.9rem;
+}
