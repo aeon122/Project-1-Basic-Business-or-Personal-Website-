@@ -111,7 +111,7 @@
     <section id="customization-your-pizza" class="py-5 bg-dark text-white customization-bg">
         <div class="container">
             <h2 class="text-center mb-5"><b>Customize Your Pizza</b></h2>
-            <form>
+            <form  method="POST" action="/submit">
                 <div class="mb-3 form-sz">
                     <label class="form-label">Choose Size:</label><br>
                     <div class="form-check form-check-inline">
@@ -197,6 +197,10 @@
                         <option>Thick Crust</option>
                         <option>Cheese Stuffed</option>
                     </select>
+                </div>
+                <!-- Add to Cart Button -->
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-danger btn-lg px-4 shadow">Add to Cart</button>
                 </div>
             </form>
         </div>
