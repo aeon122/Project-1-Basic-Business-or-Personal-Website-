@@ -40,14 +40,14 @@ h2 {
 
 /*  === HERO / BANNER ==== */
 .hero {
-    background-image: linear-gradient(#00000060, #00000060), url('/images/pizza-hero.jpg');
+    background-image: linear-gradient(#00000060, #00000060), url('../images/pizza-hero.jpg');
     background-position: center;
     background-size: cover;
 }
 
 /*  === MENU SECTION === */
 .menu-bg {
-    background-image: linear-gradient(#ffffffbe, #ffffffbe), url('/images/menu-bg.jpg');
+    background-image: linear-gradient(#ffffffbe, #ffffffbe), url('../images/menu-bg.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -62,7 +62,7 @@ h2 {
 
 /*  === CUSTOMIZATION SECTION  ==== */
 .customization-bg {
-    background-image: linear-gradient(#00000060, #00000060), url('/images/customization-bg.jpg');
+    background-image: linear-gradient(#00000060, #00000060), url('../images/customization-bg.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
