@@ -112,7 +112,7 @@ footer {
 }
 
 /*  === MEDIA QUERIES === */
-@media (maz-width: 768px) {
+@media (max-width: 768px) {
     .w-100-mobile {
         width: 100% !important;
     }
