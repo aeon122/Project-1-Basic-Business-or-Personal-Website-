@@ -89,7 +89,7 @@ h2 {
 
 .card-hover:hover {
     transform: translateY(-5px);
-    transition: transform 0.3s ease;
+    transition: transform 0.6s ease;
 }
 
 .fw-600 {
