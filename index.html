@@ -62,15 +62,16 @@
                             <img src="./images/pepperoni-pizza.jpg" class="w-100 img-fluid" alt="Pepperoni Pizza">
                             <div class="card-body mb-md-0">
                                 <h5 class="card-title">Pepperoni Pizza</h5>
-                                <p class="card-text">Indulge in a timeless classic, generously topped with zesty pepperoni
-                                    and rich, melty mozzarella cheese, all layered on our hand-tossed, homemade crust that’s
+                                <p class="card-text">Indulge in a timeless classic, generously topped with zesty
+                                    pepperoni
+                                    and rich, melty mozzarella cheese, all layered on our hand-tossed, homemade crust
+                                    that’s
                                     baked to golden perfection for a bold and satisfying flavor in every bite.</p>
                                 <span class="badge bg-success">Special Offer</span>
                                 <p class="fs-4 fw-600">$19.99 Large two-toppings</p>
                             </div>
                         </div>
                     </article>
-
                     <article class="col-md-4">
                         <h4 class="text-center pt-3 pt-md-0 mb-2">Specialty</h4>
                         <hr>
@@ -78,16 +79,17 @@
                             <img src="./images/hawaiian-pizza.jpg" class="w-100 img-fluid" alt="Hawaiian Pizza">
                             <div class="card-body mb-md-0">
                                 <h5 class="card-title">Hawaiian Pizza</h5>
-                                <p class="card-text">Savor the perfect balance of sweet and savory with our Hawaiian Pizza —
+                                <p class="card-text">Savor the perfect balance of sweet and savory with our Hawaiian
+                                    Pizza —
                                     a crowd-pleasing favorite topped with tangy tomato sauce, melty mozzarella cheese,
-                                    tender slices of cooked ham, and juicy pineapple chunks. All of this deliciousness rests
+                                    tender slices of cooked ham, and juicy pineapple chunks. All of this deliciousness
+                                    rests
                                     on our hand-crafted, homemade crust, delivering a tropical twist in every bite.</p>
                                 <span class="badge bg-success">Special Offer</span>
                                 <p class="fs-4 fw-600">$21.99 Large two-toppings</p>
                             </div>
                         </div>
                     </article>
-
                     <article class="col-md-4">
                         <h4 class="text-center pt-3 pt-md-0 mb-2">Vegetarian</h4>
                         <hr>
@@ -97,7 +99,8 @@
                                 <h5 class="card-title">Vegetarian Pizza</h5>
                                 <p class="card-text">Our Vegetarian Pizza is a flavor-packed lifesaver for any craving,
                                     loaded with a vibrant medley of caramelized onions, earthy mushrooms, fresh basil
-                                    leaves, and a kick of jalapeño heat — all brought together with a drizzle of not one,
+                                    leaves, and a kick of jalapeño heat — all brought together with a drizzle of not
+                                    one,
                                     but two distinct types of honey.</p>
                                 <span class="badge bg-success">Special Offer</span>
                                 <p class="fs-4 fw-600">$18.99 Large two-toppings</p>
@@ -113,10 +116,11 @@
             <div class="container">
                 <h2 class="text-center mb-5"><b>Customize Your Pizza</b></h2>
                 <div class="row">
-                    <div class="col-12  justify-content-center d-grid">
+                    <div class="col-12 justify-content-center d-grid">
                         <form method="POST" action="/submit" class="form-bg p-5">
-                            <div class="mb-3 form-sz">
-                                <label class="form-label">Choose Size:</label><br>
+                            <!-- Pizza Size Section -->
+                            <fieldset class="mb-3">
+                                <legend class="form-label"><b>Choose Size:</b></legend>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="size" id="small" value="small">
                                     <label class="form-check-label" for="small">Small</label>
@@ -132,11 +136,12 @@
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="size" id="xl-large"
                                         value="xl-large">
-                                    <label class="form-check-label" for="large">XL-large</label>
+                                    <label class="form-check-label" for="xl-large">XL-large</label>
                                 </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Toppings:</label><br>
+                            </fieldset>
+                            <!-- Toppings Section -->
+                            <fieldset class="mb-3">
+                                <legend class="form-label"><b>Toppings:</b></legend>
                                 <p class="p-section-bg w-100 w-100-mobile p-2">Choose Cheese</p>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="extra-cheese">
@@ -194,15 +199,16 @@
                                     <input class="form-check-input" type="checkbox" id="pineapple">
                                     <label class="form-check-label" for="pineapple">Pineapple</label>
                                 </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Crust Type:</label>
+                            </fieldset>
+                            <!-- Crust Type Section -->
+                            <fieldset class="mb-3">
+                                <legend class="form-label"><b>Crust Type:</b></legend>
                                 <select class="form-select w-100 w-100-mobile">
                                     <option>Thin Crust</option>
                                     <option>Thick Crust</option>
                                     <option>Cheese Stuffed</option>
                                 </select>
-                            </div>
+                            </fieldset>
                             <!-- Add to Cart Button -->
                             <div class="mt-4">
                                 <button type="submit" class="btn btn-danger btn-lg px-4 shadow">Add to Cart</button>
@@ -212,7 +218,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Contact & Location Section -->
         <section id="visit-us" class="pt-5 pb-4 bg-dark text-white">
@@ -232,8 +237,8 @@
                     <section class="col-md-3 text-center text-md-start mb-4">
                         <h5>Our Location</h5>
                         <address>
-                            123 Pizza Street<br />
-                            Cheesetown, NY 10001<br />
+                            123 Pizza Street<br>
+                            Cheesetown, NY 10001<br>
                             <strong>Phone:</strong> (555) 123-4567<br>
                             <strong>Email:</strong> contact@pizzapalace.com
                         </address>
