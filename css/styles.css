@@ -96,6 +96,15 @@ h2 {
     font-weight: 600;
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
+.pizza-card.selected {
+    border: 2px solid red;
+    box-shadow: 0 0 10px red;
+}
+
 /* === CUSTOMIZATION SECTION ==== */
 .customization-bg {
     background-image: linear-gradient(var(--color-black-alpha), var(--color-black-alpha)), url('../images/customization-bg.jpg');
