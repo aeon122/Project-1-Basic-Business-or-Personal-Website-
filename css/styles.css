@@ -105,9 +105,16 @@ h2::first-letter {
     text-decoration: none;
 }
 
-.pizza-card.selected {
-    border: 2px solid red;
-    box-shadow: 0 0 10px red;
+.pizza-card {
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+}
+
+.pizza-card:hover {
+    border: 2px solid var(--color-danger);
+    box-shadow: 0 0 12px #ff000066;
+    cursor: pointer;
 }
 
 /* === CUSTOMIZATION SECTION ==== */
