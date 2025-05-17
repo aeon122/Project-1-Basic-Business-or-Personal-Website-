@@ -101,8 +101,13 @@ h2::first-letter {
     font-weight: 600;
 }
 
-.no-underline {
+.card-a {
     text-decoration: none;
+    color: #212529;
+}
+
+.hover-price:hover {
+    color: var(--color-danger);
 }
 
 .pizza-card {
