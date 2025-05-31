@@ -150,6 +150,15 @@ form .form-check-label {
     background-color: var(--color-black-dark);
 }
 
+/* === ORDER SECTION ==== */
+.main-order-bg {
+    background-color: #0d0d0d;
+}
+
+.sub-main-bg {
+    background-color: #131313;
+}
+
 /* === LOCATION & CONTACT INFO === */
 .contact-info {
     padding: 2rem 0;
