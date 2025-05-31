@@ -170,10 +170,6 @@ footer {
 
 /* === MEDIA QUERIES === */
 @media (max-width: 768px) {
-    .w-100-mobile {
-        width: 100% !important;
-    }
-
     .btm-border {
         border-bottom: solid 1px var(--color-white-border);
     }
